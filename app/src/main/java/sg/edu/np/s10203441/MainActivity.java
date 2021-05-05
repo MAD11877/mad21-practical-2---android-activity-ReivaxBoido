@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     public void pressedButton (View view) {
         Log.d("debug", "button 0");
+        Button btn = (Button)view;
+        btn.setText("Clicked");
     }
 
     public void pressedButton1 (View view) {
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void pressedButton2 (View view) {
         Log.d("debug", "button 2");
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
